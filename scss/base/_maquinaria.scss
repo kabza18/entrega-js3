@@ -1,0 +1,56 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+.comoFunciona {
+  padding: 30px 50px 50px;
+
+  section {
+    padding-bottom: 20px;
+  }
+}
+
+.seccionesTexto {
+  @include flex-center();
+
+  .seccionTexto1, .seccionTexto2, .seccionTexto3, .seccionTexto4 {
+    width: 25%;
+    padding: 15px;
+  }
+}
+
+.nuevos, .usados {
+  @include flex-column();
+  align-items: center;
+}
+
+.dondeUsar {
+  @include flex-column();
+  width: 100%;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  img {
+    margin-top: -40px;
+    width: 80%;
+  }
+}
+
+.seccionesInternas {
+  display: flex;
+
+  section {
+    margin-top: 60px;
+  }
+
+  button {
+    @include button-style($accent-color, $white-color);
+  }
+}
+
+#error {
+  color: red;
+  font-size: 0.8em;
+  display: none;
+}

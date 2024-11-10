@@ -1,0 +1,23 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+main {
+    background-color: $white-color;
+    text-align: center;
+  
+    .seccion1, .seccion3, .seccion2, .seccion4 {
+      @include flex-center();
+      padding: 0 50px;
+  
+      &.seccion2, &.seccion4 {
+        flex-direction: row-reverse;
+      }
+  
+      .homeImagen1, .homeImagen2, .homeImagen3 {
+        width: 35%;
+        height: 35%;
+      }
+    }
+  }
+
+  

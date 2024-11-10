@@ -1,0 +1,43 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+
+header {
+    @include flex-center();
+    color: $white-color;
+    background-color: $primary-color;
+    padding: 20px 0;
+  
+    nav {
+      margin-left: 60px;
+  
+      ul {
+        li {
+          list-style: none;
+          float: left;
+          padding: 10px;
+  
+          a {
+            text-decoration: none;
+            color: $white-color;
+  
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  
+    .buttons {
+      padding-left: 120px;
+  
+      button {
+        @include button-style($secondary-color, $primary-color);
+  
+        &:hover {
+          border: 2px solid $secondary-color;
+        }
+      }
+    }
+  }

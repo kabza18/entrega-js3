@@ -1,0 +1,31 @@
+// Mixins
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin button-style($bg-color, $font-color, $border-radius: 40px, $padding: 14px 24px) {
+  background-color: $bg-color;
+  color: $font-color;
+  border: none;
+  border-radius: $border-radius;
+  padding: $padding;
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: transparent;
+    border: 3px solid $bg-color;
+    color: $white-color;
+  }
+}

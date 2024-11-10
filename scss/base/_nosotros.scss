@@ -1,0 +1,36 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+.seccionEquipo {
+    @include flex-center();
+    margin-top: 70px;
+  
+    img {
+      width: 40%;
+      height: 40%;
+      padding: 0 20px;
+    }
+  
+    section {
+      padding: 0 50px;
+    }
+  }
+  
+  .miembrosEquipo {
+    @include flex-center();
+    margin-top: 40px;
+  
+    img {
+      width: 70%;
+      height: 70%;
+    }
+  
+    .miembro1, .miembro2, .miembro3, .miembro4 {
+      width: 25%;
+    }
+  
+    .cargo {
+      font-size: 15px;
+    }
+  }
+  
